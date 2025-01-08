@@ -1,0 +1,55 @@
+<html lang="hi">
+
+<head>
+    <title>Document</title>
+    <style>
+        label {
+            display: block;
+            margin-bottom: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="" method="GET">
+        <label>Country of Resident</label>
+        <select name="country">
+            <option value="">Select Country</option>
+            <optgroup label="Asia">
+                <option value="India">India</option>
+                <option value="Maldives">Maldives</option>
+            </optgroup>
+            <optgroup label="Americas">
+                <option value="USA">USA</option>
+                <option value="Maxico">Maxico</option>
+            </optgroup>
+            <optgroup label="Europe">
+                <option value="France">France</option>
+                <option value="Germany">Germany</option>
+            </optgroup>
+        </select>
+        <br>
+        <br>
+        <label for="city">Select Your City</label>
+        <input type="text" name="city" id="city" placeholder="Search city" list="cities">
+        <datalist id="cities">
+            <option value="New Delhi">
+            <option value="New Luknow">
+            <option value="Mumbai">
+            <option value="Goa">
+            <option value="Laddakh">
+            <option value="Guvahati">
+            <option value="Darjling">
+            <option value="Kanchanjunga">
+        </datalist>
+        <br>
+        <br>
+        <label for="msg">Message</label>
+        <textarea rows="4" id="msg" cols="40" placeholder="Enter your additional message"></textarea>
+        <br>
+        <br>
+    </form>
+  
+</body>
+
+</html>

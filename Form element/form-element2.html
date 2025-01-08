@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        [type="image"] {
+            display: block;
+            margin-top: 10px;
+        }
+
+        fieldset {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="" method="get">
+
+
+        <fieldset>
+            <legend>Personal Details</legend>
+            <label>Name</label>
+            <input type="text" placeholder="Enter your name">
+            <br>
+            <br>
+            <label>Email</label>
+            <input type="email" placeholder="Enter your email">
+            <br>
+            <br>
+            <label>Phone Number</label>
+            <input type="tel" placeholder="Enter your phone">
+        </fieldset>
+
+
+
+        <fieldset>
+            
+            <label>Qualifications</label>
+            <label><input type="checkbox" name="qualifications[]" value="10th"> 10th Standard</label>
+            <label><input type="checkbox" name="qualifications[]" value="12th"> 12th Standard</label>
+            <label><input type="checkbox" name="qualifications[]" value="Graudate"> Graduate</label>
+            <label><input type="checkbox" name="qualifications[]" value="Post Graduate"> Post Graduate</label>
+        </fieldset>
+
+
+
+        <fieldset>
+            <label>Enter Company</label>
+            <input type="text" placeholder="Enter your previous company name">
+            <br>
+            <br>
+            <label>Work Experience in Years</label>
+            <input type="number" placeholder="eg. 1">
+            <br>
+            <br>
+            <label>Resume</label>
+            <input type="file">
+        </fieldset>
+        
+        <button type="submit">Submit</button>
+
+    </form>
+
+</body>
+
+</html>
