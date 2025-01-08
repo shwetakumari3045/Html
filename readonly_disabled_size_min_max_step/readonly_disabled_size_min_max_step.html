@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Example</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            height: 100vh;
+            margin: 0;
+        }
+        form {
+            background-color: #fff;
+            padding: 20px;
+            width: 100%;
+            max-width: 400px;
+            box-sizing: border-box;
+        }
+        label {
+            font-weight: bold;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        button {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+
+        input[readonly] {
+            background-color: #f0f0f0;
+        }
+
+        input[disabled] {
+            background-color: #e0e0e0;
+            cursor: not-allowed;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form method="GET" action="">
+        <label for="name">Name (readonly):</label>
+        <input type="text" name="name" id="name" placeholder="Enter your name" value="Payal" readonly>
+
+        <label for="name2">Name (disabled):</label>
+        <input type="text" name="name2" id="name2" placeholder="Enter your name" value="Payal" disabled>
+
+        <label for="surname">Surname:</label>
+        <input type="text" name="surname" id="surname" placeholder="Enter surname" size="1">
+
+        <label for="full_name">Full Name:</label>
+        <input type="text" name="full_name" id="full_name" placeholder="Enter full name" maxlength="5" minlength="3">
+
+        <label for="age">Age:</label>
+        <input type="number" name="age" id="age" min="18" max="30" placeholder="Enter your age">
+
+        <label for="qty">Quantity:</label>
+        <input type="number" name="qty" id="qty" min="10" max="100" step="10" placeholder="Enter quantity">
+
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+
+</html>
