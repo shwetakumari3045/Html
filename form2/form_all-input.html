@@ -1,0 +1,82 @@
+
+<html>
+    <head>
+        <title>Forms</title>
+        <style>
+            label{
+                display: block;
+                margin-bottom:5px;
+            }
+            [type="image"]{
+                display: block;
+                margin-top: 10px;
+            }
+        </style>
+    </head>
+    <body>
+
+        <form action="" method="GET">
+            <label for="date">Select Event Date</label>
+
+            <input type="date" name="event_date" id="date" value="2024-01-17">
+            <br>
+            <br>
+            <label for="month">Select Month</label>
+            <input type="month" name="month" id="month" value="">
+            <br>
+            <br>
+            <label for="week">Select Week</label>
+            <input type="week" name="week" id="week">
+            <br>
+            <br>
+            <label for="time">Select Time of event</label>
+            <input type="time" name="time" id="time">
+            <br>
+            <br>
+            <label for="datetime">Select Date and Time</label>
+            <input type="datetime-local" name="datetime" id="datetime">
+            <br>
+            <br>
+            <label for="resumes">Select Resumes <small>(Resume must be less than 1Mb)</small></label>
+            <input type="file" name="resumes[]" id="resumes" multiple accept=".pdf,.jpg,.png,.zip">
+            <br>
+            <br>
+            <label>Gender:</label>
+            <label>
+                <input type="radio" name="gender" value="Male"> Male
+            </label>
+            <label>
+                <input type="radio" name="gender" value="Male"> Female
+            </label>
+            <label>Qualifications:</label>
+            <label><input type="checkbox" name="qualifications[]" value="10th"> 10th Standard</label>
+            <label><input type="checkbox"  name="qualifications[]" value="12th"> 12th Standard</label>
+            <label><input type="checkbox"  name="qualifications[]" value="Graudate"> Graduate</label>
+            <label><input type="checkbox"  name="qualifications[]" value="Post Graduate"> Post Graduate</label>
+            <br>
+            <br>
+            <select name="city[]" multiple>
+                <option value="">Select City</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Banglore">Banglore</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Kolkata">Kolkata</option>
+            </select>
+            <br>
+            <br>
+            <label>Select Budget</label>
+            <input type="range" name="budget" value="50">
+            <br>
+            <br>
+            <input type="button" value="I am nothing">
+            <input type="hidden" name="ip_address" value="127.8.8.8">
+            <br>
+            <br>
+            <input type="reset" value="Reset the form">
+            <input type="submit" value="Register">
+            <button type="submit">Login</button>
+            <input type="image" src="add-to-cart.png" width="50px">
+
+        </form>
+    </body>
+</html>
