@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+button
+{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    padding: 10px 20px;
+    border: 0;
+    background-color: rgba(0, 0, 0, 0.272);
+ 
+}
+</style>
+<body>
+    <fieldset>
+    <body>
+        <h1 style="color: rgb(205, 48, 153);"></h1>
+    <fieldset><h1>Create Account</h1>
+    </fieldset>
+   <br>
+    <fieldset>
+    <form>
+    <table>
+        <tr>
+            <td>First name</td>
+            <td>Last name</td>
+        </tr>
+        <td><input type="text" placeholder="Enter your first name"></td>
+        <td><input type="text" placeholder="Enter your last name"></td>
+        
+        <tr>
+            <td>Email</td>
+            <td>Countary of Resident</td>
+        </tr>
+        <td><input type="text"placeholder="enter your email" size="40"></td>
+        <td><label for="city">Select Your City</label>
+        <input type="text" name="city" id="city" placeholder="Search city" list="cities">
+        <datalist id="cities">
+            <option value="New Delhi">
+            </option><option value="Luknow">
+            </option><option value="Mumbai">
+            </option><option value="Goa">
+        </option></datalist></td>
+        <tr>
+            <td>Pasword</td>
+            <td>Conform Password</td>
+        </tr>
+        <td><input type="text" placeholder="enter your pasword"></td>
+        <td><input type="text" placeholder="enter your pasword again"></td>
+        <tr>
+            <td>Gender</td>
+            </tr>
+            <tr><td> <label for="Male" name="gender">Male</label><input type="radio"> 
+            <label for="female" name="gender">female</label><input type="radio"></td>
+        </tr>
+        <tr>
+            <td>Hobbies</td>
+        </tr>
+       
+        <tr>
+            <td>
+           <input type="checkbox" name="Music[]" value="music">Music
+           <input type="checkbox" name="Sports[]" value="Sports">Sports
+           <input type="checkbox" name="Travel[]" value="Travel">Travel
+           <input type="checkbox" name="Movie[]" value="Movie">Movie
+        </td>
+        </tr>
+        <tr> 
+            <td>Source of Income</td>
+        </tr>
+        <td>
+            <input type="number" name="qty" min="01" max="10000" step="01">
+        </td> 
+        <tr>
+            <td><label>Income</label>
+             <br>
+            <input type="range" name="budget" value="50">
+            </td>
+        </tr> 
+        <tr>
+        <td><lebel></lebel>Upload Profile Picture</lebel</td>
+        <br>
+        <input type="file">
+        </tr>
+        <tr>
+            <td>Age</td>
+        </tr>
+        <td><input type="text" placeholder="age"></td>
+        <tr>
+         
+        <tr>   
+        <td><label for="msg">Message</label></td>
+        </tr>
+        <td><textarea rows="4" id="msg" cols="40" placeholder="Enter your additional message"></textarea>
+       
+    </table>
+    </form>
+</fieldset>
+<br>
+<fieldset>
+     <button type="Create">Create</button>
+            
+</fieldset> 
+ 
+</body>
+</html>

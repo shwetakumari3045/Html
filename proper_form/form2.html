@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        label {
+            display: block;
+            margin-bottom:5px;
+        }
+
+        [type="image"]  {
+            display: block;
+            margin-top:10px;
+        }
+        fieldset  {
+            margin-bottom:15px;
+        }
+        button{
+            display: flex;
+            align-items: center;
+            column-gap: 10px;
+
+            padding: 10px 20px;
+            border: 0;
+            background-color: #4caf50;
+            color: white;
+        }
+    
+    </style>
+
+</head>
+<body>
+   
+        <form action methond="get">
+        
+            <fieldset>
+            
+                <legend>Personal Details</legend>
+                <label>Name</label>
+                <input type="tel"placeholder="Enter Your Name">
+                <br>
+                <br>
+                <label>Phone</label>
+                <input type="Email"placeholder="Email Your Name">
+                <br>
+                <br>
+                <label>Phone Number</label>
+                <input type="tel"placeholder="Enter Your Phone">
+            </fieldset>
+
+            
+            <fieldset>
+                <label>Qualifications</label>
+            
+                <label><input type="checkbox" name="qualifications[]" value="10"> 10th Standard</label>
+                <label><input type="checkbox" name="qualifications[]" value="12"> 12th Standard</label>
+                <label><input type="checkbox" name="qualifications[]" value="Graduate"> Graduate</label>
+                <label><input type="checkbox" name="qualifications[]" value="Post Graduate"> Post Graduate</label>
+            </fieldset>
+
+
+            <fieldset>
+                <label>Enter Your Company</label>
+                <input type="text" placeholder="Enter Your Perious Company Name">
+                <br>
+                <br>
+                <label>Work Experience in Years</label> 
+                <input type="number" placeholder="Eg. 1">
+                <br>
+                <br>
+                <label>Resume</label>
+                <input type="file">
+                <br>
+                <br>
+                <button type="submit">
+                    <img src="right-arrow.png" height="20" alt="icon">Submit
+                </button>
+             </fieldset>
+       
+       
+
+        </form>
+        </body>
+        </html>
+        
